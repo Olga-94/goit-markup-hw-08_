@@ -1585,6 +1585,12 @@ body {
   fill: currentColor;
 }
 
+@media screen and (max-width: 768px) {
+  .clients-card-set li:nth-last-child(-n + 6) {
+    flex-basis: 210px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-card-set li:nth-last-child(-n + 6) {
     flex-basis: 226px;
@@ -1617,10 +1623,6 @@ body {
     margin: -15px;
     margin-bottom: 0;
   }
-}
-
-.clients-list-item {
-  width: 210px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
