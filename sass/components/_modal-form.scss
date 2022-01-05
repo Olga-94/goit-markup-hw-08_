@@ -45,6 +45,11 @@ text-align: center;
 letter-spacing: 0.03em;
 color: $title-primary-color;
 margin-bottom: 12px;
+
+@media screen and (max-width: 1199px) {
+  line-height: 1.5;
+}
+
 }
 
 &-input-wrapper {
@@ -120,6 +125,10 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: $primary-text-color;
 transition: all 250ms $timing-function;
+
+@media screen and (max-width: 1199px) {
+  font-size: 12px;
+}
      
 &::before {
   content: "";
@@ -127,7 +136,7 @@ transition: all 250ms $timing-function;
   width: 16px;
   height: 15px;
   border: 2px solid rgba(33, 33, 33, 1);
-  margin-right: 7px;
+  margin-right: 8px;
   border-radius: 2px; 
 
   .modal-form-policy:checked + & {
@@ -193,6 +202,10 @@ transition: all 250ms $timing-function;
   color: $primary-text-color;
   text-decoration-skip-ink:none;
   color: $accent-color;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+  }
 }
 
 .chek-policy-box {
