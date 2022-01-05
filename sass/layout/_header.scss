@@ -280,6 +280,10 @@ padding: 48px 40px;
 	}
 }
 
+.current {
+  color: $accent-color;
+}
+
 .site-nav {
   
   // align-items: center;
@@ -289,10 +293,6 @@ padding: 48px 40px;
   
 }
 
-.current {
-  // position: relative;
-  color: $accent-color;
-}
 
 .nav-list {
   // display: flex;
@@ -304,7 +304,9 @@ padding: 48px 40px;
     align-items: center;
   }
 
-  
+  .current {
+    color: $accent-color;
+  }
 
   &-item:not(:first-child) {
     margin-left: 52px;

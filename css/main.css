@@ -1095,14 +1095,14 @@ body {
   }
 }
 
+.current {
+  color: #2196f3;
+}
+
 @media screen and (max-width: 767px) {
   .site-nav {
     display: none;
   }
-}
-
-.current {
-  color: #2196f3;
 }
 
 @media screen and (max-width: 767px) {
@@ -1116,6 +1116,10 @@ body {
     display: flex;
     align-items: center;
   }
+}
+
+.nav-list .current {
+  color: #2196f3;
 }
 
 .nav-list-item:not(:first-child) {
