@@ -35,9 +35,7 @@
   .clients-card-set {
 
     @media screen and (max-width: 768px) {
-      & li:nth-last-child(-n + 6) {
-       flex-basis: 210px;
-      }  
+     
      }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -61,11 +59,12 @@
     // justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
-    // display: flex;
-    // margin: -15px;
-    // margin-bottom: 0;
-    
+  
+    @media screen and (max-width: 767px) {
+     
+      margin-top: calc(-1 * 30px);
+      margin-left: calc(-1 * 30px);
+    }
 
     @media screen and (min-width: 768px) {
       display: flex;
@@ -75,23 +74,16 @@
       margin-bottom: 0;
     }
 
-  //   & li:nth-last-child(-n + 6) {
-  //     flex-basis: 210px;
-  // }
-    // flex-basis: 100%;
-
      }
 
      .clients-list-item {
-      // margin: 15px;
-      //  width: 210px;
-      // flex-basis: calc(100% / 2 - 30px);
-      
-      // @media screen and (max-width: 767px) {
-      //  margin-top: 30px;
-      // margin-left: 30px; 
-      // }
-      
+
+      @media screen and (max-width: 767px) {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-top: 30px;
+      margin-left: 30px;   
+      }
+    
       @media screen and (min-width: 768px) and (max-width: 1199px) {
         & {
           margin: 15px;

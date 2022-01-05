@@ -1603,12 +1603,6 @@ body {
   fill: currentColor;
 }
 
-@media screen and (max-width: 768px) {
-  .clients-card-set li:nth-last-child(-n + 6) {
-    flex-basis: 210px;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-card-set li:nth-last-child(-n + 6) {
     flex-basis: 226px;
@@ -1634,12 +1628,27 @@ body {
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 767px) {
+  .clients-list {
+    margin-top: calc(-1 * 30px);
+    margin-left: calc(-1 * 30px);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .clients-list {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clients-list-item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }
 
@@ -1984,7 +1993,7 @@ body {
 
 @media screen and (max-width: 1199px) {
   .modal-window {
-    width: 450px;
+    max-width: 450px;
     height: 609px;
   }
 }
