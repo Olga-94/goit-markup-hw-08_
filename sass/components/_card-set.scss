@@ -10,12 +10,16 @@
 	}
 
 &, &-type {
-  // font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: $title-primary-color;
-    padding-bottom: 4px;
+
+   
+}
+
+&-type {
+  margin-bottom: 4px;
 }
 
 &-desc {
@@ -27,6 +31,7 @@
 }
 
 &-item {
+  // display: flex;
  align-items: center;
   
   @media screen and (max-width: 767px) {
@@ -65,12 +70,15 @@
 }
   
 
+
   
-  .portfolio-card-description {
-    padding: 20px 20px;
+.portfolio-card-description {
+    padding: 20px 24px;
     border: 1px solid #eeeeee;
     border-top: 0;
-    min-width: 322px;
+    // min-width: 322px;
+    width: 100%;
+    flex-grow: 1;
   }
 
   .portfolio-card-link{

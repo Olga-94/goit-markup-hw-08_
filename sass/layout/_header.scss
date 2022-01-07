@@ -5,14 +5,11 @@
     @media screen and (min-width: 768px) {
       height: 80px;
     }
-    // @media screen and (max-width: 767px) {
-    //   height: 60px;
-    // }
+    
 
   & .logo {
   
   padding: 16px 0;
-  // padding-bottom: 24px;
 
   @media screen and (min-width: 768px) {
 		padding: 26px 0;
@@ -34,10 +31,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    // margin-left: auto;
-    // align-items: center;
     display: inline-flex;
-    // display: block;
     margin-left: auto;
     margin-top: auto;
     margin-bottom: auto;
@@ -57,12 +51,6 @@
     margin-right: 50px;
   }
 }
-    // @media screen and (min-width: 768px) {
-    //   margin-left: auto;
-    //   align-items: center;
-    //   display: inline-flex;
-    // }
-
   
   }
 
@@ -81,12 +69,28 @@
    @media screen and (min-width: 1200px) {
     padding: 32px 0px;
    }
+
     &:focus,
     &:hover {
       color: $accent-color;
     }
   }
 }
+
+.header-address-mail {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 20px;
+  }
+}
+
+.header-address-tel {
+  @media screen  and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 20px;
+  } 
+}
+
+
+
 .portfolio  {
   @media screen and (min-width: 768px) {
 border-bottom: 1px solid #ECECEC;
@@ -104,6 +108,7 @@ border-bottom: 1px solid #ECECEC;
   &-icon {
     margin-right: 8px;
     fill: currentColor;
+
     @media screen and (min-width: 1200px) {
       margin-right: 10px;
     }
@@ -118,16 +123,14 @@ border-bottom: 1px solid #ECECEC;
   background-color: $title-secondary-color;
   width: 100vw;
   height: 100vh;
-  // left: 0;
 	top: 0;
   z-index: 5;
+  transition: all 250ms linear;
 
 padding: 48px 40px;
 
 @media screen and (min-width: 768px) {
   display: none;
-  // flex-grow: 1;
-  // align-items: center;
 }
 
 }
@@ -138,13 +141,26 @@ padding: 48px 40px;
   justify-content: space-between;
   height: 100%;
 
+  @media screen and (min-width: 768px) {
+    display: none;
+    
+  }
+
+}
+
+.mob-menu-top { 
+
+  margin-bottom: auto;
 }
 
 .mob-menu-list-item {
   font-size: 40px;
     line-height: 1.17;
     position: relative;
-    padding-bottom: 32px;
+    
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
   
     @media screen and (min-width: 768px) {
       &:not(:first-child) {
@@ -162,8 +178,6 @@ padding: 48px 40px;
 
 
   color: $title-primary-color;
-  // padding: 32px 0px; 
-
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 1.14;
@@ -172,7 +186,7 @@ padding: 48px 40px;
 
   &:hover,
 	&:focus {
-		color: var(--accent-color);
+		color: $accent-color;
 	}
 
   @media screen and (min-width: 768px) {
@@ -234,6 +248,10 @@ padding: 48px 40px;
 
 .mob-menu-tel {
   
+  @media screen and (max-width: 480px) {
+    font-size: 23px;
+  }
+
   @media screen and (max-width: 767px) {
 		color: var(--accent-color);
     display: block;
@@ -254,6 +272,7 @@ padding: 48px 40px;
 
 .mob-social-list {
   display: flex;
+  flex-wrap: wrap;
 
   &-item {
     padding-right: 10px;
@@ -267,17 +286,31 @@ padding: 48px 40px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
  }
 
+ &-item:nth-last-child(n+3) {
+  margin-bottom: 10px;
+}
+
  &-link {
   color: $accent-color;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-icon;
+  }
  }
 }
 
 .mob-menu-bottom {
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		margin-bottom: auto;
-		margin-top: auto;
+		// margin-top: auto;
 	}
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .current {

@@ -32,6 +32,10 @@
   .portfolio-list-item-img-overlay {
     position: relative;
     overflow: hidden;
+
+    @media screen and (max-width: 320px) {
+      overflow: auto;
+    }
   }
   
   

@@ -1,32 +1,4 @@
-// .menu-button {
-//     // & .menu-button-close {
-//     //     display: none;
-//     // }
-  
-//       &.is-open .menu-button-close {
-//         display: block; 
-//       } 
-
-//       &.is-open .menu-button-open {
-//         display: none;
-//       }
-
-
-//     @media screen and (min-width:768px) {
-//         display: none;
-//     }
-  
-//   &-open:hover,
-//   &-open:focus,
-//   &-close:hover,
-//   &-close:focus {
-//     fill: $accent-color;
-//   }
-  
-
-//   }
 .menu-button {
-    // margin-left: auto;
     
     display: inline-flex;
     align-items: center;
@@ -34,21 +6,18 @@
 	padding: 0;
 	border: 0;
 	background-color: transparent;
-    transition: fill 250ms $timing-function;
-
-   
+    transition: fill 250ms $timing-function; 
 
     @media screen and (min-width:768px) {
       display: none;
-     }
-          
-     &-open:hover,
-     &-open:focus,
-     &-close:hover,
-     &-close:focus {
-      fill: $accent-color;
-     }
-          
+     }          
+}
+
+.menu-btn-open:hover,
+.menu-btn-open:focus,
+.menu-btn-close:hover,
+.menu-btn-close:focus {
+ fill: $accent-color;
 }
 
 .menu-btn-close {
@@ -57,19 +26,13 @@
     top: 10px;
     right: 15px;
 	padding: 0;
-
-
 }
 
 .menu-btn-open {
-    // display: inline-flex;
     top: 10px;
     right: 15px;
 	padding: 0;
 }
-// .menu-btn-close {
-//     display: block;
-//     margin-left: auto;
-// }
+
   
 /*==================MODAL==================*/

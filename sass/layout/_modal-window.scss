@@ -12,10 +12,18 @@
     padding: 40px;
 
 
-    @media screen and (max-width: 1199px) {
-      max-width: 450px;
-      height: 609px;
+    @media screen and (max-width: 479px)  {
+    width: 98%;
     }
+
+    @media screen and (min-width: 480px)  {
+      width: 455px;
+      height: 609px;
+      }
+
+    // @media screen and (max-width: 1199px) {
+    //   height: 609px;
+    // }
   
     @media screen and (min-width: 1200px) {
       width: 528px;
