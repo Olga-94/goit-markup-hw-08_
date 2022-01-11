@@ -6,7 +6,7 @@
 		flex-wrap: wrap;
 
 		margin: -15px;
-		margin-bottom: 0;
+		// margin-bottom: 0;
 	}
 
 &, &-type {
@@ -53,7 +53,7 @@
 
   .card-set {  
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      & li:nth-last-child(n + 2) {
+      & li:nth-last-child(-n + 2) {
      flex-basis: 354px;
    } 
   }

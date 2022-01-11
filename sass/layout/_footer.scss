@@ -143,7 +143,7 @@ margin: 0;
 
   .footer-wrap-right {
  
-   margin-top: 60px;
+  //  margin-top: 60px;
       
     @media screen and (min-width: 768px) {
       margin-top: 0;
@@ -154,22 +154,24 @@ margin: 0;
 
     @media screen and (min-width: 1200px) {
     margin-right: auto;
-    // display: flex;
     }
 
     @media screen and (max-width: 767px) {
       flex-direction: column;
+      &:not(:last-child) {
+         margin-bottom: 60px;
+      }
+     
     }
-  
 
     }
 
-.footer-input {
-  @media screen and (min-width: 768px) and (max-width:1199px){
-    margin-top: 60px;
-  }
+// .footer-input {
+//   @media screen and (min-width: 768px) and (max-width:1199px){
+//     margin-top: 60px;
+//   }
   
-}
+// }
  
   .follow-us {
     display: block;
