@@ -1281,6 +1281,8 @@ body {
 @media screen and (min-width: 1200px) {
   .hero {
     height: 600px;
+    display: flex;
+    align-items: center;
   }
 }
 
