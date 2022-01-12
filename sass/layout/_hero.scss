@@ -21,6 +21,7 @@
   @media screen and (max-width: 1199px) {
     height: 400px;
     max-width: 100%;
+    // background-position: center;
   }
 
   @media screen and (min-width: 480px) and (max-width: 1199px) {
@@ -32,15 +33,18 @@
     padding: 0;
     margin-right: auto;
     margin-left: auto;
+    // margin-top: auto;
     max-width: 360px;
 
 @media screen and (min-width: 1200px) {
   max-width: 696px;
   
 }
-
   }
 
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+  }
 
 
 	@media screen and (min-width: 769px) {
