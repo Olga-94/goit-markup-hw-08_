@@ -731,10 +731,6 @@ body {
   color: #fff;
 }
 
-.portfolio-list {
-  justify-content: center;
-}
-
 @media screen and (min-width: 768px) {
   .portfolio-list {
     display: flex;
@@ -779,7 +775,7 @@ body {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .card-set li:nth-last-child(-n + 2) {
+  .card-set li:nth-last-child(n) {
     flex-basis: 354px;
   }
 }

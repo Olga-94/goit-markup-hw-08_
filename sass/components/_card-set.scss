@@ -1,12 +1,11 @@
 .portfolio-list {
-  justify-content: center;
+  // justify-content: center;
   
   @media screen and (min-width: 768px) {
 		display: flex;
 		flex-wrap: wrap;
 
 		margin: -15px;
-		// margin-bottom: 0;
 	}
 
 &, &-type {
@@ -44,16 +43,23 @@
  
     & {
       margin: 15px;
+     
     }
   
 }
+
+// @media screen and (min-width: 768px) and (max-width: 1199px) {
+//   & {
+//     width: calc(100% / 2);
+//   }
+// }
 
 }
 }
 
   .card-set {  
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      & li:nth-last-child(-n + 2) {
+      & li:nth-last-child(n) {
      flex-basis: 354px;
    } 
   }
